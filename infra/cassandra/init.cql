@@ -8,5 +8,5 @@ CREATE KEYSPACE IF NOT EXISTS store WITH REPLICATION = {
 
 CREATE TABLE IF NOT EXISTS store.message (
     create_ts timestamp PRIMARY KEY,
-    message text
+    content text
 );
