@@ -9,8 +9,5 @@ func PostMessage(c *fiber.Ctx) error {
 	if err != nil {
 		return c.SendStatus(400)
 	}
-	return c.JSON(fiber.Map{
-		"createTime": message.CreateTime,
-		"content":    message.Content,
-	})
+	return c.JSON(message)
 }
